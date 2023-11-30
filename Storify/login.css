@@ -1,0 +1,165 @@
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: black;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-left: 100px;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.small{
+    font-size: 80%;
+    text-align: center;
+}
+
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    height: 200px;
+}
+
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('img/3.jpg');
+    background-size: cover;
+
+}
+
+.left .copy{
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.left p{
+    font-weight: 400;
+    margin-top: -20px;
+    margin-left: 70px;
+    font-size: 18px;
+
+
+}
+.right{
+    margin-top: -20px;
+}
+.right .copy{
+    color: black;
+    text-align: center;
+}
+
+.right .copy p{
+    margin: 1.5rem 0;
+    font-size: 0.875em;
+    
+}
+
+.right form{
+    width: 328px;
+}
+
+form input[type="text"],
+form input[type="password"]
+{
+    
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid  #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+
+label{
+    display: block;
+    margin: 0.5rem;
+    font-size: 16px;
+}
+
+.input-container.password{
+    position: relative;
+}
+
+.input-container.password i{
+    position: absolute;
+    top: 42px;
+    right: -5px;
+}
+
+
+
+
+ .signup-btn a{
+    display: block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.signup-btn:hover a{
+    background: rgba(0, 0, 0, 0.897);
+    cursor: pointer;
+    text-decoration: none;
+}
+.link a{
+    text-decoration: none;
+    margin-top: -10px;
+}
+.link a:hover{
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 900px) {
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .left,
+    .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
